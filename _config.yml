@@ -1,0 +1,15 @@
+
+title: Master Web Player | The player to read MXF, IMF, ProRes on a web browser
+email: contact@media-io.com
+favicon: mediaio_logo.png
+tagline: Master Web Player is the first player for reading IMF, MXF, Quicktime with ProRes or H.264 or HEVC codecs in web browsers
+description: ""
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://master-web-player.com"
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
