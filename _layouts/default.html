@@ -7,6 +7,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="cache-control" content="max-age=86400" />
+  <link rel="stylesheet" href="{{ '/assets/css/font-awesome.min.css?v=' | append: site.github.build_revision | relative_url }}">
   {% seo %}
 
   <style>
@@ -19,6 +20,20 @@
            url('/assets/fonts/Muli-Light.woff2') format('woff2');
       font-weight: normal;
       font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Awesome';
+      src: url('/assets/fonts/fontawesome-webfont.eot');
+      src: url('/assets/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+           url('/assets/fonts/fontawesome-webfont.woff') format('woff'),
+           url('/assets/fonts/fontawesome-webfont.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    i {
+      font-family: "Awesome";
     }
 
     body {
@@ -59,15 +74,70 @@
       background-color: #000;
       width: 50vw;
       min-height: 500px;
+      display: flex;
+      flex-direction: column;
     }
 
     .player img {
       max-height: 400px;
+      flex: 1;
     }
  
     .player .comment {
       color: #fff;
       font-size: 1.5em;
+      flex: 1;
+    }
+
+    .player .bar {
+      height: 22px;
+      background-color: #3864AA;
+      display: flex;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 2px;
+    }
+
+    .player .configuration {
+      padding-right: 5px;
+    }
+
+    .player .bar img {
+      height: 18px;
+      border: none;
+      color: white;
+    }
+
+    .player .bar .timeline {
+      flex: 1;
+      position: relative;
+    }
+
+    .player .bar .timeline .line {
+      height: 2px;
+      background-color: #fff;
+      width: calc(100% - 50px);
+      opacity: 0.7;
+      display: inline-block;
+      margin-left: 25px;
+      margin-right: 25px;
+      top: 7px;
+      left: 0px;
+      position: absolute;
+    }
+
+    .player .bar .timeline .circle {
+      background-color: #fff;
+      width: 10px;
+      height: 10px;
+      opacity: 0.7;
+      display: inline-block;
+      margin-left: 10px;
+      margin-right: 10px;
+      top: 3px;
+      left: 40px;
+      position: absolute;
+      border-radius: 50%;
     }
 
     .details {

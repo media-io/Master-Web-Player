@@ -5,6 +5,21 @@ layout: default
 <div class="player">
   <img src="/assets/images/media-io.animated.svg"/>
   <div class="comment">The screen will open soon !</div>
+  <div class="bar">
+    <span class="play" style="color: #fff">
+      <img src="/assets/images/duotone-play.svg"/>
+    </span>
+    <span class="timeline">
+      <span class="circle"></span>
+      <span class="line"></span>
+    </span>
+    <span class="configuration" style="color: #fff">
+      <img src="/assets/images/cog-solid.svg"/>
+    </span>
+    <span class="fullscreen" style="color: #fff">
+      <img src="/assets/images/expand-solid.svg"/>
+    </span>
+  </div>
 </div>
 
 <div class="details">
